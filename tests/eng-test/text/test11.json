@@ -1,0 +1,77 @@
+[
+   {
+      "type":"user-input",
+      "text":"Is Andy here? - I don't know, I |input| (not see) him today.",
+      "answer":"text"
+   },
+   {
+      "type":"user-input",
+      "text":"Where … you |input| (go)? - To the library.",
+      "answer":"text"
+   },
+   {
+      "type":"user-input",
+      "text":"Would you like to borrow this magazine? - No, thanks. I |input| (read) it before.",
+      "answer":"text"
+   },
+   {
+      "type":"user-input",
+      "text":"Betty's bus |input| (arrive) at 5 o'clock. I must go and meet her at the bus station.",
+      "answer":"text"
+   },
+   {
+      "type":"user-input",
+      "text":"We |input| (fit) new locks.",
+      "answer":"text"
+   },
+   {
+      "type":"user-input",
+      "text":"Have you seen my record book? I |input| (look) for it all the morning.",
+      "answer":"text"
+   },
+   {
+      "type":"user-input",
+      "text":"Mike |input| (talk) to his friend for an hour already.",
+      "answer":"text"
+   },
+   {
+      "type":"user-input",
+      "text":"More and more forests |input| (disappear) because of fires nowadays.",
+      "answer":"text"
+   },
+   {
+      "type":"user-input",
+      "text":"The first lesson |input| (not finish) at 9.45.",
+      "answer":"text"
+   },
+   {
+      "type":"user-input",
+      "text":"The coffee |input| (smell) good.",
+      "answer":"text"
+   },
+   {
+      "type":"user-input",
+      "text":"Linda is disappointed. She |input| (fail) her test.",
+      "answer":"text"
+   },
+   {
+      "type":"user-input",
+      "text":"School |input| (prepare) children for life.",
+      "answer":"text"
+   },
+   {
+      "type":"user-input",
+      "text":"Your new French perfume |input| (smell) so nice",
+      "answer":"text"
+   },
+   {
+      "type":"user-input",
+      "text":"We |input| (have) a party next Saturday night. Will you come?",
+      "answer":"text"
+   },
+   {
+      "type":"user-input",
+      "text":"I |input| (enjoy) every bite of this meal.",
+      "answer":"text"
+   }
+]

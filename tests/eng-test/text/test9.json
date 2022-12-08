@@ -1,0 +1,199 @@
+[
+    {
+        "type": "test",
+        "text": "Where is Mary? She .. shopping. She'll be back soon.",
+        "answers":
+        [
+            {
+                "text": "goes",
+                "state": "false"
+            },
+
+            {
+                "text": "is going",
+                "state": "false"
+            },
+
+            {
+                "text": "has gone",
+                "state": "true"
+            }
+        ]
+    },
+
+    {
+        "type": "test",
+        "text": "Look! That man .. to open your car.",
+        "answers":
+        [
+            {
+                "text": "try",
+                "state": "false"
+            },
+
+            {
+                "text": "is trying",
+                "state": "true"
+            },
+
+            {
+                "text": "has been trying",
+                "state": "false"
+            }
+        ]
+    },
+
+    {
+        "type": "test",
+        "text": "My brother is very sporty, he .. football a lot.",
+        "answers":
+        [
+            {
+                "text": "plays",
+                "state": "true"
+            },
+            
+            {
+                "text": "is playing",
+                "state": "false"
+            },
+
+            {
+                "text": "has played",
+                "state": "false"
+            }
+        ]
+    },
+
+    {
+        "type": "test",
+        "text": "I .. to buy a new dress for the next party.",
+        "answers":
+        [
+            {
+                "text": "go",
+                "state": "false"
+            },
+
+            {
+                "text":"am going",
+                "state": "true"
+            },
+
+            {
+                "text":"have gone",
+                "state": "false"
+            }
+        ]
+    },
+
+    {
+        "type": "test",
+        "text": "My cousin .. with us for two weeks, he hasn't gone away yet.",
+        "answers":
+        [
+            {
+                "text": "is staying",
+                "state": "false"
+            },
+
+            {
+                "text":"has been staying",
+                "state": "true"
+            },
+
+            {
+                "text":"has stayed",
+                "state": "false"
+            }
+        ]
+    },
+
+    {
+        "type": "test",
+        "text": "Hello! where .. you .. ?",
+        "answers":
+        [
+            {
+                "text": "are .. going",
+                "state": "true"
+            },
+
+            {
+                "text":"do .. go",
+                "state": "false"
+            },
+
+            {
+                "text":"have .. gone",
+                "state": "false"
+            }
+        ]
+    },
+
+    {
+        "type": "test",
+        "text": "I miss her. She .. at home for ages.",
+        "answers":
+        [
+            {
+                "text": "isn't",
+                "state": "false"
+            },
+
+            {
+                "text":"hasn't been",
+                "state": "true"
+            },
+
+            {
+                "text":"isn't being",
+                "state": "false"
+            }
+        ]
+    },
+
+    {
+        "type": "test",
+        "text": "Hurry up! Everybody .. for you.",
+        "answers":
+        [
+            {
+                "text": "is waiting",
+                "state": "true"
+            },
+
+            {
+                "text":"wait's",
+                "state": "false"
+            },
+
+            {
+                "text":"has waited",
+                "state": "false"
+            }
+        ]
+    },
+
+    {
+        "type": "test",
+        "text": "I am very tired but I .. my work yet.",
+        "answers":
+        [
+            {
+                "text": "don't finish",
+                "state": "false"
+            },
+
+            {
+                "text":"haven't finished",
+                "state": "true"
+            },
+
+            {
+                "text":"am not finishing",
+                "state": "false"
+            }
+        ]
+    }
+]

@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+        <title>Тест по англискому</title>
+        <link rel="stylesheet" href="../static/style.css">
+        <meta name="viewport" content="width=device-width">
+    </head>
+
+    <body>
+        <div id="page">
+            <header>
+                <div id="header-logo">ТЕСТИРОВАНИЕ</div>
+            </header>
+
+            <div id="admin-panel">
+                <div class="admin-card">
+                    <a href="https://kavy4.github.io/create-test/" target="_blank">Создать тест</a>
+                </div>
+            </div>
+
+            <main id="main">
+                <div id="authentication-card">
+                    <h1 id="authentication-title">Укажите</h1>
+                    <hr>
+
+                    <div class="authentication-group">
+                        <label class="authentication-label">Имя</label>
+                        <input type="text" class="authentication-input" placeholder="Здесь имя">
+                    </div>
+
+                    <div class="authentication-group">
+                        <label class="authentication-label">Фамилия</label>
+                        <input type="text" class="authentication-input"placeholder="Здесь фамилия">
+                    </div>
+
+                    <div class="authentication-group">
+                        <label class="authentication-label">Класс</label>
+                        <select id="authentication-select1" class="authentication-select">
+                            <option disabled selected>----</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option disabled>----</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option disabled>----</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                        </select>
+
+                        <select id="authentication-select2" class="authentication-select">
+                            <option disabled selected>-</option>
+                            <option value="А">А</option>
+                            <option value="Б">Б</option>
+                        </select>
+                    </div>
+
+                    <div class="authentication-group">
+                        <label class="authentication-label">Группа</label>
+                        <select id="authentication-select3" class="authentication-select">
+                            <option disabled selected>----</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+
+                    <button id="start-button" class="button">Начать</button>
+                </div>
+
+                <!-- <button class="button" id="start-button">Начать</button> -->
+
+                <div id="questions">
+                    <div id="question-content">
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-card-num">
+                                <div class="question-card-num-in"></div>
+                            </div>
+
+                            <div class="question-card-content test">
+                                <form action="#">
+                                    <div class="question-card-form-name"></div>
+
+                                    <div class="question-card-form-question">
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+
+                                        <label class="quetsion-card-form-label">
+                                            <div class="quetsion-card-form-in">
+                                                <input type="radio" name="radio" class="question-card-form-radio">
+                                                
+                                                <span class="question-card-form-fake"></span>
+                                                <span class="question-card-form-text"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+
+                            <div class="question-card-content user-input">
+                                <form action="#">
+                                    <div class="question-card-form"></div>
+                                </form>
+                            </div>
+
+                            <div class="question-card-form-button button">Ответить</div>
+
+                            <div class="question-card-form-success question-card-form-stats">Правильно</div>
+                            <div class="question-card-form-error question-card-form-stats">Ошибка! Правильный ответ </div>
+                        </div>
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+
+
+                        
+                        
+                        
+                    </div>
+                </div>
+                
+                <div id="question-result">
+                    <svg width="120" height="120" id="progress-bar-svg">
+                        <circle  id="progress-bar" stroke="#000" stroke-width="4px" cx="60" cy="60" r="52" fill="transparent">
+                    </svg>
+
+                    <svg id="progress-bar-hade" width="120" height="120">
+                        <circle  stroke="#e0e0e0" stroke-width="4px" cx="60" cy="60" r="52" fill="transparent">
+                    </svg>
+                    <p id="question-result-percent"></p>
+
+                    <br>
+
+                    <p id="question-result-text"></p>
+                </div>
+            </main>
+        </div>
+
+        <canvas id="canvas"></canvas>
+        <button id="draw-clear">очистить</button>
+
+        <script src="../static/index.js"></script>
+    </body>
+</html>

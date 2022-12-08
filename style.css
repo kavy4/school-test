@@ -1,0 +1,37 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header
+{
+    width: 100vw;
+    height: 75px;
+    box-shadow: 0 0 20px 0 #aeaeaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#header-logo
+{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+main
+{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li
+{
+    margin: 25px 0;
+}
