@@ -1,0 +1,1 @@
+[{"type":"test","text":"2   2","answers":[{"text":"1","state":"false"},{"text":"6","state":"false"},{"text":"4","state":"true"}]},{"type":"user-input","text":"В прямоугольнике |input| углов","answer":"4"}]

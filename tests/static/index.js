@@ -306,7 +306,7 @@ function CheckUserAnswerInput(buff, questionNum)
 
 function CheckUserAnswerTest(questionNum)
 {
-    let buff, buff1, buff2
+    let buff, buff1
     let data
     let Answer = questionCard[questionNum].children[1].children[0].children[1].children //
     for (let index = 0; index < Answer.length; index++)
@@ -315,7 +315,7 @@ function CheckUserAnswerTest(questionNum)
         if (buff.checked)
         {
             data = buff.value
-            buff2 = index + 1
+            buff1 = index + 1
         }
 
         if (buff.value == 'true')
@@ -328,14 +328,14 @@ function CheckUserAnswerTest(questionNum)
     {
         document.querySelectorAll('.question-card-form-success')[questionNum].style.display = 'block'
         truePoints++
-        resultAnswer.push('Правильно')
+        resultAnswer.push(`Правильно (${buff1})`)
     }
     else
     {
         document.querySelectorAll('.question-card-form-error')[questionNum].textContent = 'правильный номер ' + buff1
         document.querySelectorAll('.question-card-form-error')[questionNum].style.display = 'block'
         falsePoints++
-        resultAnswer.push(`Не правильно (${buff2})`)
+        resultAnswer.push(`Не правильно (${buff1})`)
     }
 }
 
