@@ -1,1 +1,0 @@
-[{"type":"test","text":"Вопрос 1","answers":[{"text":"Ответ 1","state":"false"},{"text":"Ответ 1","state":"true"},{"text":"Ответ 1","state":"false"}]},{"type":"user-input","text":"test1|input|test2","answer":"test"}]
