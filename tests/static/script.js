@@ -87,6 +87,12 @@ function LoadTest()
     
     request.onload = () => 
     {
+        if (request.response == null)
+        {
+            console.log(window.location.href)
+            window.location.href = '/error-web/index.html'
+            return
+        }
         let questions = request.response
         questionLength = questions.length
 
@@ -145,8 +151,43 @@ function LoadTest()
             inputText[index] = inputText[index].replace('|input|', `<input type="text" class="question-card-form-input" data-value="${inputAnswer[index]}">`)
             document.getElementsByClassName('question-card-form')[index].innerHTML = inputText[index]
         }
+        
+        // let questionCardArray = new Array()
+
+        // for (let index = 0; index < questionLength; index++)
+        // {
+        //     questionCardArray.push(document.getElementsByClassName('question-card')[index])
+        // }
+        
+        // questionCardArray.sort(() => Math.random() - 0.5)
+
+        // console.log(questionCardArray)
+
+        // for (let index = 0; index < questionLength; index++)
+        // {
+        //     document.getElementById('question-content').children[index] = questionCardArray[index]
+        // }
     }
     request.send(null)
+
+    // document.getElementsByClassName('question-card').sort(() => Math.random() - 0.5)
+
+    
+
+    // console.log(questionLength)
+
+    // for (let index = 0; index < questionLength; index++)
+    // {
+    //     // questionCardArray.push(document.getElementsByClassName('question-card')[index])
+    //     // console.log(document.getElementsByClassName('question-card')[index])
+    //     console.log('а?')
+    // }
+    // for (let index = 0; index < questionCardArray.length; index++)
+    // {
+    //     // console.log(questionCardArray[index][1].className)
+    //     console.log(questionCardArray[index])
+    // }
+    // console.log(questionCardArray)
 }
 
 
