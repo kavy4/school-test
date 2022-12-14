@@ -90,7 +90,7 @@ function LoadTest()
         if (request.response == null)
         {
             console.log(window.location.href)
-            window.location.href = 'school-test/error-web/index.html'
+            window.location.href = '/error-web/index.html'
             return
         }
         let questions = request.response
