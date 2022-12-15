@@ -85,7 +85,7 @@ function LoadTest()
     request.open('GET', `./text/test${userClassNum}.json`)
     request.responseType = 'json'
     
-    request.onload = () => 
+    request.onload = () =>
     {
         if (request.response == null)
         {

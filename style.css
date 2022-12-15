@@ -5,6 +5,12 @@
     font-family: sans-serif;
 }
 
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
 header
 {
     width: 100vw;
@@ -25,13 +31,38 @@ header
 
 main
 {
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 50px 50px;
 }
 
-li
+#subject
 {
-    margin: 25px 0;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+.subject-card
+{
+    padding: 50px;
+    border-radius: 14px;
+    background: #f1f4f8;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.subject-card:hover
+{
+    transform: translate(0, -2px);
+}
+
+.subject-card-link
+{
+    color: black;
+    text-decoration: none;
 }

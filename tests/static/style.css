@@ -11,10 +11,11 @@ body
     -ms-user-select: none;
     user-select: none;
 
-
     background: url('./img/background.jpg');
     background-size: 100vw 100vh;
     background-attachment: fixed;
+
+    /* background: black; */
 }
 
 html
