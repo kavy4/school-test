@@ -1,24 +1,6 @@
 [
     {
         "type":"test",
-        "text":" Would you like to stay for dinner? We're having roast chicken with .. potatoes.",
-        "answers":[
-            {
-                "text":"poached",
-                "state":"false"
-            },
-            {
-                "text":"mashed",
-                "state":"true"
-            },
-            {
-                "text":"backed",
-                "state":"false"
-            }
-        ]
-    },
-    {
-        "type":"test",
         "text":"Dinner is almost ready. I just have to .. the cheese for the pasta.",
         "answers":[
             {
@@ -37,24 +19,6 @@
     },
     {
         "type":"test",
-        "text":"Joe eats out so often that he always welcomes the chance to have a nice .. meal whenever he visits his mother.",
-        "answers":[
-            {
-                "text":"home-cooked",
-                "state":"true"
-            },
-            {
-                "text":"undercooked",
-                "state":"false"
-            },
-            {
-                "text":"cooked",
-                "state":"false"
-            }
-        ]
-    },
-    {
-        "type":"test",
         "text":"The new clothes shop has a great variety of jeans and shirts at very .. prices.",
         "answers":[
             {
@@ -67,24 +31,6 @@
             },
             {
                 "text":"long",
-                "state":"false"
-            }
-        ]
-    },
-    {
-        "type":"test",
-        "text":"Jane made a delicious .. sauce for the spaghetti.",
-        "answers":[
-            {
-                "text":"raw",
-                "state":"false"
-            },
-            {
-                "text":"spicy",
-                "state":"true"
-            },
-            {
-                "text":"wave",
                 "state":"false"
             }
         ]
@@ -121,60 +67,6 @@
             },
             {
                 "text":"Pinch",
-                "state":"true"
-            }
-        ]
-    },
-    {
-        "type":"test",
-        "text":"Tony takes a .. lunch to work, because he doesn't like leaving the office to eat out.",
-        "answers":[
-            {
-                "text":"Packed",
-                "state":"true"
-            },
-            {
-                "text":"Loaf",
-                "state":"false"
-            },
-            {
-                "text":"Litres",
-                "state":"false"
-            }
-        ]
-    },
-    {
-        "type":"test",
-        "text":"How many .. of chocolate do you eat per week?",
-        "answers":[
-            {
-                "text":"Litres",
-                "state":"false"
-            },
-            {
-                "text":"Bars",
-                "state":"true"
-            },
-            {
-                "text":"Loaf",
-                "state":"false"
-            }
-        ]
-    },
-    {
-        "type":"test",
-        "text":"What do you prefer: a .. of brown or white bread? Match",
-        "answers":[
-            {
-                "text":"Bars",
-                "state":"false"
-            },
-            {
-                "text":"Pinch",
-                "state":"false"
-            },
-            {
-                "text":"Loaf",
                 "state":"true"
             }
         ]
